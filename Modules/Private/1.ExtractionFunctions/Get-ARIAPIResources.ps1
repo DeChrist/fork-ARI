@@ -108,7 +108,7 @@ function Get-ARIAPIResources {
             }
             Start-Sleep -Milliseconds 200
 
-            #VM Reservation Recomentation
+            #VM Reservation Recommendation
             Write-Debug ((get-date -Format 'yyyy-MM-dd_HH_mm_ss')+' - '+'Getting VM Reservation Recomentation')
             $url = ('https://' + $AzURL + '/subscriptions/' + $Sub + '/providers/Microsoft.Consumption/reservationRecommendations?api-version=2023-05-01')
             try {
