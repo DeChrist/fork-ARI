@@ -23,7 +23,7 @@ function Get-ARIAPIResources {
 
     try
         {
-            Write-Debug ((get-date -Format 'yyyy-MM-dd_HH_mm_ss')+' - '+'Adquiring Token')
+            Write-Debug ((get-date -Format 'yyyy-MM-dd_HH_mm_ss')+' - '+'Acquiring Token')
             $Token = Get-AzAccessToken -AsSecureString -InformationAction SilentlyContinue -WarningAction SilentlyContinue -Debug:$false
 
             $TokenData = $Token.Token | ConvertFrom-SecureString -AsPlainText
