@@ -170,7 +170,7 @@ Function Invoke-ARI {
 
     if ($DebugPreference -eq 'SilentlyContinue')
         {
-            Write-Host 'Debbuging Mode: ' -nonewline
+            Write-Host 'Debugging Mode: ' -nonewline
             Write-Host 'Off' -ForegroundColor Yellow
             Write-Host 'Use the parameter ' -nonewline
             Write-Host '-Debug' -nonewline -ForegroundColor Yellow
